@@ -7,8 +7,8 @@ import ValentineComponent2 from "./ValentineComponent2";
 const App = () => {
   return (
     <>
-    {/* <ValentineComponent/> */}
-    <ValentineComponent2/>
+    <ValentineComponent/>
+    {/* <ValentineComponent2/> */}
     </>
   );
 };
