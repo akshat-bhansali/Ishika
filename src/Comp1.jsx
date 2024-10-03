@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import the styles for toast notifications
 import { Modal, Input, Button, Alert } from "antd"; // Import Ant Design components
-import ValentineComponent2 from "./ValentineComponent2";
+import ValentineComponent2 from "./Comp2";
 
 const ValentineComponent = () => {
   const [button1Size, setButton1Size] = useState({

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Modal, List, Button } from 'antd';
-import ValentineComponent from './ValentineComponent';
+import ValentineComponent from './Comp1';
 import TypingEffect from './TypingEffect';
 
 const ValentineComponent2 = () => {
