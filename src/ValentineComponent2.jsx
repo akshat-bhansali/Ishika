@@ -9,19 +9,23 @@ const ValentineComponent2 = () => {
   const [isThirdModalVisible, setThirdModalVisible] = useState(false);
 
   const firstReasons = [
-    "You make me laugh.",
-    "You understand me like no one else.",
-    "I love your passion for life.",
-    "Your kindness inspires me.",
-    "You bring out the best in me."
+    "I admire how calm you remain when faced with difficult challenges. Your ability to think clearly and take thoughtful steps forward inspires me.",
+    "Your intelligence and depth of knowledge never cease to amaze me. I love how smart you are!",
+    "The way you look at me with your beautiful brown eyes brings me so much joy. When I gaze into your eyes, all the noise fades away, and I feel a deep sense of calm.",
+    "Your unwavering support gives me the confidence to take risks and explore new ideas. Your openness to any suggestion is truly inspiring.",
+    "I can't help but smile when you get a little dramatic; it's just so endearing.",
+    "You make me feel incredibly special. You show your true self with me, and that authenticity, so different from how you behave around others, means the world to me."
   ];
 
   const secondReasons = [
-    "You support my dreams.",
-    "Your smile lights up my day.",
-    "I admire your intelligence.",
-    "You have a great sense of adventure.",
-    "You are my best friend."
+    "Your inspiring milestones of success.",
+    "Your inspiring milestones of success.",
+    "Your laughter that brightens every moment.",
+    "The Love We Share",
+    "You Blossoming into your true self.",
+    "Happiness radiates from your presence.",
+    "The Future We Share",
+    "Today is All About You-Celebrating you, my heart's delight."
   ];
 
   useEffect(() => {
@@ -169,39 +173,57 @@ const ValentineComponent2 = () => {
   return (
     <div style={styles.body}>
       <div style={styles.container}>
-        <h1 style={styles.h1}>Learn Ethical Hacking With Nafiul</h1>
+        <h1 style={styles.h1}>A promise of forever</h1>
         <div style={styles.content}>
           <section id="introduction">
-            <h2 style={styles.h2}>What is Hacking?</h2>
             <p style={styles.p}>
-              Hacking is the process of finding vulnerabilities in systems, networks, or devices and exploiting them for unauthorized access. Ethical hacking is done with permission to secure the systems.
+            In this moment, we face a trial,  
+Yet I believe, we'll emerge with a smile.  
+Words fall short of what you mean to me,  
+My best friend, my heart, my safe haven, truly.  
+
             </p>
           </section>
 
           <section id="social-engineering">
-            <h2 style={styles.h2}>What is Social Engineering?</h2>
             <p style={styles.p}>
-              Social engineering is a tactic used by hackers to manipulate individuals into divulging confidential information. It often involves deception and psychological manipulation.
-            </p>
+            I share my thoughts, both bright and gray,  
+No filter needed, come what may.  
+In every joy, in every tear,  
+Your presence turns my doubts to cheer.  
+</p>
           </section>
 
           <section id="cyber-bullying">
-            <h2 style={styles.h2}>What is Cyberbullying?</h2>
             <p style={styles.p}>
-              Cyberbullying refers to bullying that takes place over digital devices like smartphones and computers. It includes harassing or intimidating someone online through social media, messages, or other digital communication.
-            </p>
+            You've transformed my world, so vast and wide,  
+An inspiration, a light by my side.  
+As you step forth into a new dawn,  
+I have faith you'll find you calling and carry on.  
+</p>
           </section>
 
           <section id="phishing">
-            <h2 style={styles.h2}>What are Phishing Links?</h2>
             <p style={styles.p}>
-              Phishing is a method where attackers trick users into clicking malicious links that steal sensitive information like passwords, credit card details, or other personal data.
-            </p>
+            Your support lifts me, your faith shines bright,  
+In your embrace, everything feels right.  
+With dreams entwined, our paths align,  
+This bond we share, so pure, divine.  
+</p>
+          </section>
+          <section id="phishing">
+            <p style={styles.p}>
+            The future awaits, with wonders in store,  
+No matter what it holds, I promise to be there, evermore.  
+Together we'll cherish what lies in store.  
+In every heartbeat, in all that we do,  
+I promise you this—I'll always love you. 
+</p>
           </section>
 
           <div className="youtube-btn">
             <button style={styles.button} onClick={showFirstModal}>
-              5 reasons why I love you!!
+            Why You're My Favorite Person!!
             </button>
           </div>
         </div>
@@ -217,7 +239,7 @@ const ValentineComponent2 = () => {
 
       {/* First Modal */}
       <Modal
-        title="5 Reasons Why I Love You"
+        title="Why You're My Favorite Person"
         open={isFirstModalVisible}
         onOk={handleFirstModalOk}
         onCancel={handleFirstModalOk}
@@ -235,13 +257,13 @@ const ValentineComponent2 = () => {
           renderItem={item => <List.Item>{item}</List.Item>}
         />
         <Button onClick={showSecondModal} style={{ marginTop: '10px' }}>
-          5 More Reasons Why I Love You
+        Celebrating you today!!
         </Button>
       </Modal>
 
       {/* Second Modal */}
       <Modal
-        title="5 More Reasons Why I Love You"
+        title="Celebrating you today!!"
         open={isSecondModalVisible}
         onOk={handleSecondModalOk}
         onCancel={handleSecondModalOk}
@@ -259,20 +281,23 @@ const ValentineComponent2 = () => {
           renderItem={item => <List.Item>{item}</List.Item>}
         />
         <Button onClick={showThirdModal} style={{ marginTop: '10px' }}>
-          5 More Reasons Why I Love You
+        My favourite picture of us!!!
         </Button>
       </Modal>
 
       {/* Third Modal */}
       <Modal
-        title="Endless Reasons"
+        title="My favourite picture of us!!!"
         open={isThirdModalVisible}
         onOk={handleThirdModalOk}
         onCancel={handleThirdModalOk}
         footer={[]}
       >
-        The list is endless, so that's it!
-        <TypingEffect text="Good morning" typingSpeed={200} />
+        <img
+            id="new-image"
+            src="./3-popup.jpg"
+            alt="celebration gif"
+          />
       </Modal>
     </div>
   );

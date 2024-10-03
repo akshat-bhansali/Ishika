@@ -85,7 +85,7 @@ const ValentineComponent = () => {
 
   // Handle password submission
   const handlePasswordSubmit = () => {
-    if (password === "hello world") {
+    if (password === "Udaipur" || password === "udaipur") {
       setShowComponent2(true); // Show ValentineComponent2
       toast.success("Finally, you guessed it!"); // Show success toast
       setModalVisible(false); // Close the modal
@@ -93,7 +93,7 @@ const ValentineComponent = () => {
         setModalVisible(false);
       }, 2000);
     } else {
-      setAlertMessage("Hint: It is something"); // Show hint alert
+      setAlertMessage("Hint: Our most magical kiss happened here!"); // Show hint alert
     }
   };
   if(showComponent2){
@@ -108,7 +108,7 @@ const ValentineComponent = () => {
       {valentineVisibility && (
         <div>
           <div style={{ color: "red", fontWeight: "bold", fontSize: "40px" }}>
-            Will You Be My Valentine?
+          Can I keep you forever ?
           </div>
           <div style={{ display: "flex", justifyContent: "center", gap: "20px", marginTop: "20px" }}>
             <div
@@ -211,7 +211,7 @@ const ValentineComponent = () => {
             <div style={{ opacity: showSecondImage ? 1 : 0, transition: "opacity 1s, transform 1s", transform: showSecondImage ? "rotate(0deg)" : "rotate(12deg)" }}>
               <h2 style={{ fontSize: "24px", fontWeight: "bold" }}>What I See:</h2>
               <img
-                src="./user.png"
+                src="./what-i-see.jpg"
                 alt="What I See"
                 style={{ marginTop: "10px", width: "384px", height: "288px", borderRadius: "10px" }}
               />
